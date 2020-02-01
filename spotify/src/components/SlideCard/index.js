@@ -8,14 +8,14 @@ import {
 
 import Card from '../Card';
 
-const SlideCard = () => {
+const SlideCard = ({ slide }) => {
   return (
     <Container>
-      <Title>Teste</Title>
+      <Title>{slide.title}</Title>
       <SlideScroll>
-        <Card />
-        <Card />
-        <Card />
+        {slide.itens && slide.itens.map((item, index) => (
+          <Card key={index} item={item} />
+        ))}
       </SlideScroll>
     </Container>
   );

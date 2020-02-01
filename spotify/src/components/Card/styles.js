@@ -6,7 +6,7 @@ export const Container = styled.View`
   margin-right: 8px;
 `;
 
-export const Photo = styled.View`
+export const Photo = styled.Image`
   width: 150px;
   height: 150px;
   background-color: #888;

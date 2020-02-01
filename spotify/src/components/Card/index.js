@@ -8,14 +8,16 @@ import {
   SubtitleDescription
 } from './styles';
 
-const Card = () => {
+const Card = ({ item }) => {
   return (
     <Container>
-      <Photo />
+      <Photo source={{ uri: item.photo }} />
       <ContainerSubtitle>
-        <SubtitleTitle>Seus Pedidos do dia</SubtitleTitle>
-        <SubtitleDescription>Episódios de podcast escolhidos para você</SubtitleDescription>
+        <SubtitleTitle>{item.subtitle.title}</SubtitleTitle>
+        <SubtitleDescription>{item.subtitle.description}</SubtitleDescription>
       </ContainerSubtitle>
     </Container>
   );
 }
+
+export default Card;
