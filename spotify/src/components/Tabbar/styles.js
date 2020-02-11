@@ -1,10 +1,10 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  height: 80px;
+  height: 60px;
   background-color: #222;
   border-top-color: #000;
-  border-width: 2px;
+  border-top-width: 2px;
 `;
 
 export const SubContainer = styled.View`
